@@ -1,4 +1,4 @@
-*!
+/*!
  * @license Open source under BSD 2-clause (http://choosealicense.com/licenses/bsd-2-clause/)
  * Copyright (c) 2015, Curtis Bratton
  * All rights reserved.
