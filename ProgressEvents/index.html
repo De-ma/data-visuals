@@ -67,5 +67,12 @@ d3.json("https://api.github.com/repos/mbostock/d3/git/blobs/2e0e3b6305fa10c1a89d
     .get(function(error, data) {
       meter.transition().delay(250).attr("transform", "scale(0)");
     });
+    
+    var xhr = d3.json(url)
+    .on("progress", function() { console.log("progress", d3.event.loaded); })
+    .on("load", function(json) { console.log("success!", json); })
+    .on("error", function(error) { console.log("failure!", error); })
+    .get();
 
 </script>
+</body>
