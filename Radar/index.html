@@ -48,7 +48,7 @@
 			////////////////////////////////////////////////////////////// 
 
 			var margin = {top: 100, right: 100, bottom: 100, left: 100},
-				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+				width = Math.min(700, window.innerWidth) - margin.left - margin.right + 200 ,
 				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 					
 			////////////////////////////////////////////////////////////// 
@@ -57,31 +57,31 @@
 
 			var data = [
 					  [//iPhone
-						{axis:"Monday",value:0.22},
-						{axis:"Tuesday",value:0.28},
-						{axis:"Wednesday",value:0.29},
-						{axis:"Thursday",value:0.17},
-						{axis:"Friday",value:0.22},
-						{axis:"Saturday",value:0.02},
-						{axis:"Sunday",value:0.21}
+						{axis:"M",value:0.22},
+						{axis:"T",value:0.28},
+						{axis:"W",value:0.29},
+						{axis:"T",value:0.17},
+						{axis:"F",value:0.22},
+						{axis:"S",value:0.02},
+						{axis:"S",value:0.21}
 //						{axis:"To Be A Smartphone",value:0.50}			
 					  ],[//Samsung
-						{axis:"Monday",value:0.27},
-						{axis:"Tuesday",value:0.16},
-						{axis:"Wednesday",value:0.35},
-						{axis:"Thursday",value:0.13},
-						{axis:"Friday",value:0.20},
-						{axis:"Saturday",value:0.13},
-						{axis:"Sunday",value:0.35}
+						{axis:"M",value:0.27},
+						{axis:"T",value:0.16},
+						{axis:"W",value:0.35},
+						{axis:"T",value:0.13},
+						{axis:"F",value:0.20},
+						{axis:"S",value:0.13},
+						{axis:"S",value:0.35}
 //						{axis:"To Be A Smartphone",value:0.38}
 					  ],[//Nokia Smartphone
-						{axis:"Monday",value:0.26},
-						{axis:"Tuesday",value:0.10},
-						{axis:"Wednesday",value:0.30},
-						{axis:"Thursday",value:0.14},
-						{axis:"Friday",value:0.22},
-						{axis:"Saturday",value:0.04},
-						{axis:"Sunday",value:0.41}
+						{axis:"M",value:0.26},
+						{axis:"T",value:0.10},
+						{axis:"W",value:0.30},
+						{axis:"T",value:0.14},
+						{axis:"F",value:0.22},
+						{axis:"S",value:0.04},
+						{axis:"S",value:0.41}
 //						{axis:"To Be A Smartphone",value:0.30}
 					  ]
 					];
@@ -96,7 +96,7 @@
 			  w: width,
 			  h: height,
 			  margin: margin,
-			  maxValue: 0.5,
+			  maxValue: 1,
 			  levels: 5,
 			  roundStrokes: true,
 			  color: color
