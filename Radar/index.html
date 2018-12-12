@@ -48,7 +48,7 @@
 			////////////////////////////////////////////////////////////// 
 
 			var margin = {top: 100, right: 100, bottom: 100, left: 100},
-				width = Math.min(700, window.innerWidth) - margin.left - margin.right,
+				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
 				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 					
 			////////////////////////////////////////////////////////////// 
@@ -56,15 +56,16 @@
 			////////////////////////////////////////////////////////////// 
 
 			var data = [
-					  [
-						{axis:"Monday",value:0.40},
-						{axis:"Tuesday",value:0.48},
-						{axis:"Wednesday",value:0.39},
-						{axis:"Thursday",value:0.27},
-						{axis:"Friday",value:0.32},
+					  [//iPhone
+						{axis:"Monday",value:0.22},
+						{axis:"Tuesday",value:0.28},
+						{axis:"Wednesday",value:0.29},
+						{axis:"Thursday",value:0.17},
+						{axis:"Friday",value:0.22},
 						{axis:"Saturday",value:0.02},
-						{axis:"Sunday",value:0.21}		
-					  ],[
+						{axis:"Sunday",value:0.21}
+//						{axis:"To Be A Smartphone",value:0.50}			
+					  ],[//Samsung
 						{axis:"Monday",value:0.27},
 						{axis:"Tuesday",value:0.16},
 						{axis:"Wednesday",value:0.35},
