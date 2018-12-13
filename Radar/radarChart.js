@@ -227,10 +227,10 @@ function RadarChart(id, data, options) {
 				.transition().duration(200)
 				.style('opacity', 1);
 		})
-		.on("mouseout", function(){
-			tooltip.transition().duration(200)
-				.style("opacity", 0);
-		});
+//		.on("mouseout", function(){
+//			tooltip.transition().duration(200)
+//				.style("opacity", 0);
+//		});
 		
 	//Set up the small tooltip for when you hover over a circle
 	var tooltip = g.append("text")
